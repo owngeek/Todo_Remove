@@ -90,6 +90,7 @@ console.log(deletedItem)
 <h3>{obj.age}</h3>
 
 
+
 </div>
 
       ))}
