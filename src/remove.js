@@ -39,7 +39,7 @@ console.log(deletedItem)
 //gender_button_start//
 
 const [gender,setGender] =useState('')
-const [peoplearray,setPeopleArray] =useState([survey])
+const [peoplearray,setPeopleArray] =useState([...survey])
 //const [female,setFemale] =useState()
 //const [all,setAll] = useState()
 
@@ -62,7 +62,10 @@ const handleMale = () =>{
   setGender('male')
  
 
-  setPeopleArray( peoplearray.filter((obj)=>(obj.gender == gender)))
+  //setPeopleArray( peoplearray.filter((obj)=>(obj.gender == gender)))
+
+  setPeopleArray([{id:1,name:'vivek',age:29,gender:'male', all:'all'},
+  {id:2,name:'vinduja',age:25,gender:'female', all:'all'},]);
 
   console.log(peoplearray)
 
