@@ -39,7 +39,7 @@ console.log(deletedItem)
 //gender_button_start//
 
 const [gender,setGender] =useState('')
-const [malearray,setMaleArray] =useState([])
+const [peoplearray,setPeopleArray] =useState([survey])
 //const [female,setFemale] =useState()
 //const [all,setAll] = useState()
 
@@ -50,21 +50,32 @@ const [malearray,setMaleArray] =useState([])
 ////setAll(all)
 //}
 //}
-console.log(gender)
+
+
+
+
+
+
 
 const handleMale = () =>{
+  
   setGender('male')
  
-  setMaleArray( first.filter((obj)=>{obj.gender = gender
 
+  setPeopleArray( peoplearray.filter((obj)=>(obj.gender == gender)))
+
+  console.log(peoplearray)
+
+ } 
  
-  console.log([malearray])
+
+  
+ 
 
 
-})
 
 
-)}
+
 
 
 
@@ -161,10 +172,10 @@ const handleMale = () =>{
 <h1>in the case of gender is all</h1 >
 
 
-  {//male.map((obj,index)=>(
+  { //malearray.map((obj,index)=>(
 //<div key={index}>
 //<h3>{obj.id}</h3>
-//<h3>{obj.name}</h3>
+////<h3>{obj.name}</h3>
 //<h3>{obj.age}</h3>
 //<h3>{obj.gender}</h3>
 
